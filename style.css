@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Kosugi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    font-family: "Kosugi", sans-serif;
+    display: flex;
+    gap: 20px;
+    min-height: 80px;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+header nav {
+    margin-left: 130px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+}
+
+.phone_number {
+    max-width: 100%;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+.phone_number:hover {
+    transform: scale(1.1);
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-right: 20px;
+    font-size: 120px;
+}
+
+.subtext {
+    font-size: 24px;
+}
+
+.woman-photo {
+    min-width: 500px;
+    min-height: 500px;
+    background-image: url('images/intro_woman.png');
+}
+
+/* .centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Располагает кнопку внизу контейнера */
+  /* } */
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Располагает элементы вертикально */
+    /* Другие стили для контейнера */
+  }
+
+.centered-button:hover {
+    transform: scale(1.1);
+} */
+
+.centered-hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-hr hr {
+    color: white;
+    min-width: 15px;
+    max-width: 50px;
+    margin: 0;
+}
+
+.questions h1 {
+    font-size: 96px;
+}
+
+.questions {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.argument {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.workers_titul {
+    text-align: center;
+    color: white;
+    margin: 100px auto;
+    font-size: 96px;
+}
+
+.workers {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.worker {
+    text-align: center;
+    transition: 0.5s;
+    font-size: 40px;
+    width: 425px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.worker:hover {
+    background-color: #f0f0f0;
+    /* изменяем фон при наведении */
+    color: black;
+}
+
+.worker img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.worker .name {
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.worker .sj {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+footer {
+    padding: 70px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(83, 83, 83, 1) 0%, rgb(0, 0, 0, 1) 85%);
+    height: 300px;
+    margin-top: 70px;
+    font-family: "Istok Web", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer h1 {
+    margin: 0 auto;
+    font-size: 60px;
+}
+
+footer .social {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social a {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 25px;
+}
+
+footer .social a:hover {
+    transform: scale(1.1);
+}
+
+footer .links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.links a {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    transform: scale(1.1);
+}
+
+footer hr {
+    width: 35%;
+    margin: 20px auto;
+}
+
+footer p {
+    font-size: 23px;
+    font-style: italic;
+}
+
+/* ---------------------------------------- */
+            /* Media Asks */
+
+@media(max-width: 1024px){
+    .woman-photo{
+        display: none;
+    }
+
+    .questions h1 {
+        font-size: 70px;
+    }
+
+    .workers_titul {
+        text-align: center;
+        color: white;
+        margin: 100px auto;
+        font-size: 70px;
+    }
+
+    .workers {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 950px){
+    header nav{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px auto;
+    }
+
+    .intro{
+        margin-top: -200px;
+        margin-bottom: -150px;
+    }
+
+    .questions h1 {
+        font-size: 70px;
+    }
+
+    .workers_titul {
+        text-align: center;
+        color: white;
+        margin: 100px auto;
+        font-size: 70px;
+    }
+
+    .phone_number{
+        display: none;
+    }
+
+    .workers {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 750px){
+    .arguments img{
+        width: 40px;
+    }
+
+    .arguments .text{
+        font-size: 25px;
+    }
+
+    .questions h1 {
+        font-size: 50px;
+    }
+
+    .workers_titul {
+        text-align: center;
+        color: white;
+        margin: 100px auto;
+        font-size: 50px;
+    }
+
+    footer {
+        padding: 40px;
+        padding-top: 100px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(83, 83, 83, 1) 0%, rgb(0, 0, 0, 1) 85%);
+        height: 300px;
+        margin-top: 70px;
+        font-family: "Istok Web", sans-serif;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer h1 {
+        margin: 0 auto;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 640px){
+    footer {
+        padding: 40px;
+        padding-top: 100px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(83, 83, 83, 1) 0%, rgb(0, 0, 0, 1) 85%);
+        height: 300px;
+        margin-top: 70px;
+        font-family: "Istok Web", sans-serif;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer h1 {
+        margin: 0 auto;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 460px){
+    h1 {
+        margin-right: 20px;
+        font-size: 100px;
+    }
+
+    .subtext {
+        font-size: 20px;
+    }
+
+    .centered-hr{
+        display: none;
+    }
+
+    footer hr{
+        display: none;
+    }
+
+    footer p {
+        margin: 40px;
+        font-size: 23px;
+        font-style: italic;
+    }
+
+    footer .links {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .workers_titul {
+        text-align: center;
+        color: white;
+        margin: 100px auto;
+        font-size: 40px;
+    }
+
+    .questions h1 {
+        font-size: 40px;
+    }
+
+    .arguments .text {
+        font-size: 20px;
+    }
+
+    .worker .name {
+        font-size: 40px;
+        font-weight: bolder;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 30px;
+        background: rgb(0, 0, 0);
+        height: 300px;
+        margin-top: 70px;
+        font-family: "Istok Web", sans-serif;
+        color: white;
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
+@media(max-width: 380px){
+    header {
+        font-family: "Kosugi", sans-serif;
+        display: flex;
+        gap: 20px;
+        min-height: 80px;
+        justify-content: space-between;
+        padding: 0 180px;
+        align-items: center;
+    }
+
+    h1 {
+        margin-right: -80px;
+        font-size: 80px;
+    }
+
+    .subtext {
+        font-size: 20px;
+    }
+
+    .arguments {
+        margin-left: 60px;
+    }
+
+    .questions h1 {
+        font-size: 40px;
+        margin-top: -100px;
+    }
+
+    .workers_titul {
+        text-align: center;
+        color: white;
+        margin: 100px auto;
+        font-size: 40px;
+        margin-left: 40px;
+    }
+
+    footer h1 {
+        margin: 0 auto;
+        font-size: 40px;
+        margin-left: 80px;
+    }
+
+    footer .social {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70px;
+    }
+
+    footer .links {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    footer p {
+        margin: 40px;
+        font-size: 23px;
+        font-style: italic;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 380px){
+    footer h1{
+    margin: 0 auto;
+    font-size: 40px;
+    margin-left: 100px;
+    }
+
+    footer .social {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 130px;
+    }
+
+    footer .links {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+        margin-left: 130px;
+    }
+
+    footer p {
+        display: none;
+    }
+}
